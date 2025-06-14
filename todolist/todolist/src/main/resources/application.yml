@@ -13,3 +13,6 @@ spring:
     database-platform: org.hibernate.dialect.MySQL8Dialect
   server:
     port: 8080
+  jackson:
+    date-format: yyyy-MM-dd HH:mm
+    time-zone: Asia/Seoul

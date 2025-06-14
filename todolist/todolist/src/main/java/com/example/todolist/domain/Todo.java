@@ -1,5 +1,9 @@
 package com.example.todolist.domain;
 
+import java.time.LocalDateTime;
+
+import org.hibernate.annotations.CreationTimestamp;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -37,5 +41,14 @@ public class Todo {
 
     public void setCompleted(boolean completed) {
         this.completed = completed;
+    }
+
+    @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
+    private LocalDateTime createdAt;
+
+    // ✅ 게터 추가
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 }

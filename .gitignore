@@ -1,0 +1,21 @@
+# Backend
+backend/todolist/target/
+backend/todolist/.mvn/
+backend/todolist/mvnw
+backend/todolist/mvnw.cmd
+backend/todolist/HELP.md
+*.class
+*.log
+
+# Frontend
+node_modules/
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
